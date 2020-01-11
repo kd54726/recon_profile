@@ -53,6 +53,10 @@ dirsearch(){ runs dirsearch and takes host and extension as arguments
 python3 ~/tools/dirsearch/dirsearch.py -u $1 -e $2 -t 50 -b 
 }
 
+sublister(){
+python2 ~/tools/Sublist3r/sublist3r.py -d $1 -t 200 -v -o $2
+}
+
 sqlmap(){
 python ~/tools/sqlmap*/sqlmap.py -u $1 
 }
